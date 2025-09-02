@@ -1,0 +1,60 @@
+# Source files (only ship dist/)
+src/
+*.ts
+!*.d.ts
+
+# Development files
+.env
+.env.*
+tsconfig.json
+.eslintrc.*
+.prettierrc
+jest.config.*
+test/
+tests/
+*.test.*
+*.spec.*
+
+# Build artifacts not needed in package
+.tsbuildinfo
+coverage/
+.nyc_output/
+
+# Documentation (README.md is included automatically)
+docs/
+*.md
+!README.md
+!CHANGELOG.md
+
+# Git and GitHub
+.git/
+.gitignore
+.github/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files  
+.DS_Store
+Thumbs.db
+
+# Generated content
+generated-images/
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Logs
+logs/
+*.log
+
+# Dependencies (will be installed by user)
+node_modules/
+
+# Development tools
+.eslintcache
+.cache/

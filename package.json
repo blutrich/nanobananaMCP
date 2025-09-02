@@ -1,0 +1,68 @@
+{
+  "name": "gemini-image-mcp",
+  "version": "1.0.0",
+  "description": "Open-source MCP server for AI-powered image generation using Google's Gemini API. Provides business-focused tools for marketing visuals, logos, food photography, product mockups, and social media content.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "gemini-image-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/gemini-image-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "image-generation",
+    "gemini",
+    "google-ai",
+    "business",
+    "marketing",
+    "logo",
+    "photography",
+    "automation"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/gemini-image-mcp/issues"
+  },
+  "homepage": "https://github.com/yourusername/gemini-image-mcp#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "dotenv": "^16.4.5",
+    "sharp": "^0.33.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}
