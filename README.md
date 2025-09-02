@@ -157,17 +157,25 @@ RATE_LIMIT_REQUESTS=100
 RATE_LIMIT_WINDOW=3600
 ```
 
-## 🖼️ Generated Images
+## 🖼️ Where to Find Your Generated Images
 
-All generated images are saved locally to the `generated-images/` directory with descriptive filenames:
+**⚠️ Important:** All images are saved on YOUR computer (not in Claude or the cloud)
 
+### 📍 Quick Answer:
+Images are saved in the **`generated-images/`** folder on your computer.
+
+### 📚 Need Help Finding Them?
+**→ [Click here for the complete beginner's guide](./FINDING-YOUR-IMAGES.md)** with screenshots and step-by-step instructions!
+
+### File Organization:
 ```
 generated-images/
-├── marketing-1756761697374.png
-├── logo-techflow-solutions-1756761698123.png
-└── product-organic-skincare-1756761699456.png
+├── marketing-1756761697374.png         (Marketing visuals)
+├── logo-techflow-solutions-1756761698123.png   (Business logos)
+└── product-organic-skincare-1756761699456.png  (Product mockups)
 ```
 
+### How to View Your Images:
 Since Claude Desktop cannot display images directly, you can view them by:
 
 1. **Opening the folder:**
