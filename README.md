@@ -23,13 +23,24 @@ An open-source Model Context Protocol (MCP) server that provides AI-powered imag
 - ✅ **ROI Focused** - Each tool provides business impact insights
 - ✅ **Multiple Formats** - Support for various aspect ratios and use cases
 
-## 🚀 Quick Start
+## 🚀 Quick Start - Choose Your Editor
+
+This MCP server works with multiple AI-powered editors. Choose your preferred setup:
 
 ### Prerequisites
 
 - Node.js 18 or higher
 - Google AI API key ([Get one here](https://aistudio.google.com/apikey))
-- Claude Desktop (for MCP integration)
+- One of the supported editors below
+
+### ✨ Supported Editors
+
+| Editor | Setup Difficulty | Features | Status |
+|--------|------------------|----------|--------|
+| **Claude Desktop** | Easy | Full support | ✅ Recommended |
+| **Cursor AI** | Easy | Full support | ✅ Popular |
+| **VS Code** | Medium | GitHub Copilot integration | ✅ Available |
+| **JetBrains IDEs** | Medium | AI Assistant integration | ✅ Available |
 
 ### Installation
 
@@ -50,10 +61,15 @@ npm install gemini-image-mcp
    export GOOGLE_API_KEY='your-google-ai-api-key'
    ```
 
-2. **Configure Claude Desktop:**
-   
-   Add to your `claude_desktop_config.json`:
-   
+## 🛠️ Editor Configuration
+
+Choose your editor and follow the setup instructions:
+
+### Option 1: Claude Desktop (Recommended)
+
+**Why Choose Claude:** Native MCP support, easiest setup, full feature compatibility.
+
+1. **Add to your `claude_desktop_config.json`:**
    ```json
    {
      "mcpServers": {
@@ -67,10 +83,92 @@ npm install gemini-image-mcp
    }
    ```
 
-3. **Start using in Claude:**
+2. **Start using:**
    - Restart Claude Desktop
    - Look for the 🔌 MCP connection indicator
    - Use the image generation tools in your conversations
+
+### Option 2: Cursor AI Editor
+
+**Why Choose Cursor:** Popular AI editor, one-click MCP setup, great for developers.
+
+1. **Method A - One-Click Setup (Recommended):**
+   - Open Cursor Settings → MCP Servers
+   - Click "Add New MCP Server"
+   - Search for "Gemini Image Generator" 
+   - Click install and authenticate with your Google API key
+
+2. **Method B - Manual Configuration:**
+   - Create `~/.cursor/mcp.json` in your home directory:
+   ```json
+   {
+     "mcpServers": {
+       "gemini-image": {
+         "command": "gemini-image-mcp",
+         "env": {
+           "GOOGLE_API_KEY": "your-google-ai-api-key"
+         }
+       }
+     }
+   }
+   ```
+   - Restart Cursor
+
+3. **Start using:**
+   - Open Cursor's Composer (Cmd/Ctrl + I)
+   - Ask to generate marketing images, logos, or product mockups
+   - Tools will appear under "Available Tools" in MCP settings
+
+### Option 3: VS Code + GitHub Copilot
+
+**Why Choose VS Code:** Popular editor, integrates with GitHub Copilot's agent mode.
+
+1. **Requirements:**
+   - VS Code 1.102+ 
+   - GitHub Copilot subscription
+   - GitHub Copilot Chat extension
+
+2. **Configuration:**
+   - Install the MCP server globally: `npm install -g gemini-image-mcp`
+   - VS Code will auto-detect MCP servers from other tools
+   - Or add to VS Code settings:
+   ```json
+   {
+     "github.copilot.chat.mcp.servers": {
+       "gemini-image": {
+         "command": "gemini-image-mcp",
+         "env": {
+           "GOOGLE_API_KEY": "your-google-ai-api-key"
+         }
+       }
+     }
+   }
+   ```
+
+3. **Start using:**
+   - Open GitHub Copilot Chat
+   - Use agent mode (@workspace)
+   - Request image generation tasks
+
+### Option 4: JetBrains IDEs (IntelliJ, PyCharm, etc.)
+
+**Why Choose JetBrains:** Powerful IDEs with AI Assistant integration.
+
+1. **Requirements:**
+   - JetBrains IDE with AI Assistant plugin
+   - AI Assistant subscription
+
+2. **Configuration:**
+   - Go to Settings → Tools → AI Assistant → Model Context Protocol
+   - Add new MCP server:
+     - Name: `Gemini Image Generator`
+     - Command: `gemini-image-mcp`
+     - Environment: `GOOGLE_API_KEY=your-api-key`
+
+3. **Start using:**
+   - Open AI Assistant chat
+   - Request image generation with business context
+   - Tools will be available automatically
 
 ## 📖 Usage Examples
 

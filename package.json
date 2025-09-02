@@ -1,7 +1,7 @@
 {
   "name": "gemini-image-mcp",
   "version": "1.0.0",
-  "description": "Open-source MCP server for AI-powered image generation using Google's Gemini API. Provides business-focused tools for marketing visuals, logos, food photography, product mockups, and social media content.",
+  "description": "Multi-editor MCP server for AI-powered image generation using Google's Gemini API. Works with Claude Desktop, Cursor, VS Code, and JetBrains IDEs. Provides business-focused tools for marketing visuals, logos, and product mockups.",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
@@ -24,6 +24,9 @@
     "mcp",
     "model-context-protocol",
     "claude",
+    "cursor",
+    "vscode",
+    "jetbrains",
     "ai",
     "image-generation",
     "gemini",
@@ -32,7 +35,8 @@
     "marketing",
     "logo",
     "photography",
-    "automation"
+    "automation",
+    "multi-editor"
   ],
   "author": "Your Name <your.email@example.com>",
   "license": "MIT",
