@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/blutrich-nanobananamcp-badge.png)](https://mseep.ai/app/blutrich-nanobananamcp)
+
 # Nano Banana Image MCP Server
 
 [![npm version](https://badge.fury.io/js/gemini-image-mcp.svg)](https://badge.fury.io/js/gemini-image-mcp)
